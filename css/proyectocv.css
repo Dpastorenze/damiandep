@@ -1,0 +1,368 @@
+/*body ul{
+    display: inline-block;
+    height: auto;
+  
+} */
+/*
+.menu ul li{
+    display: flex;
+    height: inherit;
+
+}
+.menu{
+    height: inherit;
+}  */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Lato', sans-serif; 
+    font-weight: normal;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+}
+
+h1 strong{
+    color: #ef233c;
+}
+
+h2 {
+    color: #d90429;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+img {
+    display: flex;
+    margin-top: 80px;
+    border-radius: 50px;
+}
+
+.titulo{
+    width: 1000px;
+    margin: 0 auto;
+    /* Heredamos del padre, para no arruinar el wrapper*/ 
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+}
+.titulo p { 
+    display: flex;
+}
+
+.header{
+    background-color: #2b2d42;
+    color: white;
+    margin-top: 0;
+    display: flex;
+    /* Espacio entre elementos del componente*/
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header ul{
+    display: flex;
+    height: inherit;
+    
+}
+.header ul li{
+    height: inherit;
+    
+}
+.header a {
+    display: block;
+    height: inherit;
+    display:flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.menu{
+    height: inherit;
+}
+ol, ul{
+    /* Sacamos margenes */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.experience-container{
+    background: #edf2f4;
+    padding: 20px;
+}
+.experience-job-company, .experience-date{
+    margin: 10px 0;
+}
+.experience-description{
+    font-size: 20px;
+}
+
+.experience strong{
+    font-family: 'Lato', sans-serif; 
+}
+.experience{
+    /* border: tamaño tipo estilo*/
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.experience-job-name{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.experience-details{
+    width: 500px;
+    height: inherit;
+    display: inline-block;
+}
+.experience-imageContainer{
+    display: inline-block;
+}
+
+figure{
+    margin: 0;
+}
+#btnmostrar{
+    border-radius: 50px;
+    height: 50px;
+    width: 50;
+    display: block;
+    margin-top: 10px;
+    background: grey;
+    color: black;
+    padding: 10px 20px;
+    width: 100px;
+
+}
+#btnocultar{
+    border-radius: 30px;
+    height: 40px;
+    width: 40;
+    display: block;
+    margin-top: 10px;
+    background: grey;
+    color: black;
+    padding: 10px 20px;
+    width: 100px;
+
+}
+
+.personal{
+    /* border: tamaño tipo estilo*/
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.habilities-container{
+    margin: 0 10px 10px 10px;
+    padding: 0 10px;
+    background-color: #f7fcff;
+}
+
+.hability-percentage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.hability-angular{
+    width: 60%;
+    background-color: #B52E31; 
+}
+.hability-spring{
+    width: 80%;
+    background-color: #BCE7C1;
+}
+.hability-java{
+    width: 50%;
+    background-color: #EED4D4;
+}
+.hability-web{
+    width: 80%;
+    background-color: #EFCC90;
+}
+
+.hability-python{
+    width: 40%;
+    background-color: #A3B2C9;
+}
+.hability-linux{
+    width: 70%;
+    background-color: #A5A5A5;    
+}
+.hability-percentage{
+    width: 100%;
+    background-color: #ddd;
+}
+.hability-imageContainer{
+    height: 60px;
+}
+
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    /* Para centrar elementos horizontalmente
+    justify-content: center;
+    */
+    /* Central elementos verticalmente. Requiere un height*/
+    height: 200px;
+    align-items: center;
+
+    /* Cajas se ponganm una al lado de la otra, o una abajo de la otra*/
+    /* flex-direction: column; */ 
+
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    flex-shrink: 0; /* Con esto no se achican las cajas si no caben en el width */ 
+}
+
+.mailco{
+    opacity:0;
+}
+.formc {
+    display: none;
+}
+ textarea{
+    background-color: #fbfbfb; 
+      width: 350px; 
+      height: 100px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: #ab4493; 
+      margin-top: 10px;  
+      padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+
+.botonform {
+    border-radius: 15px;
+     height: 50px;
+     width: 50;
+     display: block;
+     margin-top: 10px;
+     background: transparent;
+     color: white;
+     border-radius: 5px;
+     padding: 10px 20px;
+     width: 100px;
+}
+
+#enviar{
+    border-radius: 15px;
+    height: 50px;
+    width: 50;
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100px;
+}
+
+.contact{
+    background-color: #2b2d42;
+    color:white;
+    height: 500px;
+    display:inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+
+.social-link{
+    align-items: center;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px 50px;
+    justify-content: space-between;
+}
+
+.social-link.github{
+    background-image: url('../img/github.png');
+}
+.social-link.IG{
+    background-image: url("../Img/ig2.png");
+ ;
+}
+.social-link.linkedin{
+    background-image: url('../img/linkedin.png');
+ 
+}
+/*.form-button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100px;
+  
+}*/
+
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.footer img{
+    /*vertical-align: middle;*/
+    display: inline-flex;
+}
+.footer a{
+    color: white;
+}

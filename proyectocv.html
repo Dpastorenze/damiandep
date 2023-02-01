@@ -71,7 +71,7 @@
         <div class="titulo">
           <h2>Datos personales</h2>
         </div>
-        <input type="submit" class="btnmostrar" value="Mostrar info" onclick="mostrar();">
+        <input type="submit" class="btnmostrar" id="btnmostrar" value="Mostrar info" onclick="mostrar();">
         <script src="Java\personal.js" type="text/javascript"></script>
         <div class="personal" id="personalid">       
   <p>Nombre:Alan Airton Martins</p>
@@ -79,7 +79,7 @@
   <p>Nacionalidad : Argentina</p> 
   <p>Estado civil: Soltero</p>
 </section>
-<input type="submit" class="btnocultar" value="Ocultar info" onclick="ocultar();">
+<input type="submit" class="btnocultar" id="btnocultar" value="Ocultar info" onclick="ocultar();">
 <script src="Java\personal.js"></script>
 </div>
 
@@ -193,13 +193,13 @@
         <p>
             <label for="telefone" class="colocar_telefono">Teléfono
             </label>
-                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
         </p>		
         <p>
             <label for="asunto" class="colocar_asunto">Asunto
                 <span class="obligatorio">*</span>
             </label>
-                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                <input type="text" name="asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
         </p>		
     
         <p>
